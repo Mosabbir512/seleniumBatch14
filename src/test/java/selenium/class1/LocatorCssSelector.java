@@ -19,14 +19,12 @@ public class LocatorCssSelector {
         driver.findElement(By.cssSelector(".shopping_cart_badge")).click();
         driver.findElement(By.cssSelector("#checkout")).click();
 
-
         driver.findElement(By.cssSelector("#first-name")).sendKeys("Mosabbir");
         driver.findElement(By.cssSelector("#last-name")).sendKeys("Hoss");
         driver.findElement(By.cssSelector("#postal-code")).sendKeys("5200");
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("#continue")).click();
         Thread.sleep(2000);
-
         System.out.println("success : == "+driver.getTitle());
 
         driver.quit();
