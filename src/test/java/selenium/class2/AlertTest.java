@@ -27,15 +27,15 @@ public class AlertTest {
         driver.switchTo().alert().dismiss();
         Thread.sleep(2000);
 
-//        driver.findElement(By.cssSelector("button[onclick='myPromp()']")).click();
-//        Thread.sleep(2000);
-//
-//        Alert art=driver.switchTo().alert();
-//        art.sendKeys("Selenium Alert Test");
-//        System.out.println("Alert Text: "+ art.getText());
-//        Thread.sleep(2000);
-//        art.accept();
-//        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("button[onclick='myPromp()']")).click();
+        Thread.sleep(2000);
+
+        Alert art=driver.switchTo().alert();
+        art.sendKeys("Selenium Alert Test");
+        System.out.println("Alert Text: "+ art.getText());
+        Thread.sleep(2000);
+        art.accept();
+        Thread.sleep(2000);
 
 
         driver.quit();
